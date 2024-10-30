@@ -1,0 +1,55 @@
+#conteneur{
+    margin: auto;
+    height: 600px;
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    grid-template-rows: repeat(6, 1fr);
+    
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "aside main main main "
+    "aside main main main"
+    "aside main main main"
+    "footer footer footer footer";
+    gap:2px;
+}
+
+header{
+grid-area: header;
+text-align: left;
+background-color: aqua;
+padding-top: 30px;
+padding-left: 30px;
+}
+
+nav{
+grid-area: nav;
+text-align: left;
+background-color: aqua;
+padding-top: 30px;
+padding-left: 30px;
+}
+footer{
+grid-area: footer;
+text-align: left;
+background-color: aqua;
+padding-top: 30px;
+padding-left: 30px;
+}
+main{
+    grid-area: main;
+    text-align: left;
+    background-color: aqua;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+aside{
+    grid-area: aside;
+    text-align: left;
+    background-color: aqua;
+    padding-top: 30px;
+    padding-left: 30px;
+}
